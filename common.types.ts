@@ -1,4 +1,5 @@
 import { User, Session } from 'next-auth'
+import React from "react";
 
 export type FormState = {
   title: string;
@@ -60,4 +61,8 @@ export interface ProjectForm {
   liveSiteUrl: string;
   githubUrl: string;
   category: string;
+}
+
+export interface ReactChildren {
+  children: React.ReactNode
 }
